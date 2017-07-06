@@ -1,0 +1,38 @@
+
+package javaapplication1;
+
+class Persona {
+	String nombre;
+	String apellido;
+
+	public Persona() {
+		this.nombre = "\0";
+		this.apellido = "\0";
+	}
+        
+	public Persona(String nombre) {
+		this();
+		this.nombre = nombre;
+	}
+
+	public Persona(String nombre, String apellido) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+
+	public String toString() {
+		return "Persona = " + this.nombre + " " + apellido;
+	}
+}
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        Persona p1 = new Persona();
+		Persona p2 = new Persona("Juan");
+		Persona p3 = new Persona("Jose", "Lopez");
+		System.out.println(p1.toString());
+		System.out.println(p2.toString());
+		System.out.println(p3.toString());
+    }
+    
+}
